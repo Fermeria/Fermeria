@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tous les modules de formation sur les maladies de la tomate. Mildiou, oidium, alternariose, botrytis, fusariose et plus.">
+    <title>Modules de formation | Fermeria Agricole</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <div class="brand-icon">&#127793;</div>
+                Fermeria
+            </a>
+            <div class="navbar-menu" id="navMenu">
+                <a href="index.html">Accueil</a>
+                <a href="modules.html" class="active">Modules</a>
+                <a href="prevention.html">Prevention</a>
+                <a href="ressources.html">Ressources</a>
+            </div>
+            <div class="navbar-actions">
+                <a href="modules.html" class="btn btn-primary">Commencer</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO MODULES ============ -->
+    <section class="hero" style="padding: 8rem 0 3rem;">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 2rem;">
+                <div class="badge">&#128218; 31 modules complets</div>
+                <h1 class="hero-title" style="font-size: 2.8rem;">Modules de formation</h1>
+                <p class="hero-description" style="font-size: 1.15rem;">
+                    Explorez chaque maladie en detail : diagnostic, prevention, traitement et produits recommandes.
+                    Cliquez sur un module pour acceder a son contenu complet.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FILTRES ============ -->
+    <section class="section" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="filters" id="filters">
+                <button class="filter-btn active" data-filter="all">Toutes</button>
+                <button class="filter-btn" data-filter="fongique">&#129440; Fongiques</button>
+                <button class="filter-btn" data-filter="bacterienne">&#129440; Bacteriennes</button>
+                <button class="filter-btn" data-filter="virale">&#129516; Virales</button>
+                <button class="filter-btn" data-filter="ravageur">&#129419; Ravageurs</button>
+                <button class="filter-btn" data-filter="carence">&#127793; Carences</button>
+            </div>
+
+            <!-- ============ GRILLE DES MALADIES ============ -->
+            <div class="disease-cards-grid" id="diseases-grid">
+                <!-- Genere dynamiquement par JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ RAPPEL METHODE ============ -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="badge">&#128161; Methode d'apprentissage</div>
+                <h2 class="section-title">Chaque module contient 7 sections</h2>
+                <p class="section-description">
+                    Une approche structuree pour maitriser chaque maladie de A a Z.
+                </p>
+            </div>
+            <div class="cards-grid fade-in" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+                <div class="card">
+                    <div class="card-icon">&#129516;</div>
+                    <h3 class="card-title">1. Presentation</h3>
+                    <p class="card-text">Nom, type, cultures concernees et importance de la maladie.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#127758;</div>
+                    <h3 class="card-title">2. Origine</h3>
+                    <p class="card-text">Agent pathogene, cycle de developpement, mode de propagation.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#127777;</div>
+                    <h3 class="card-title">3. Facteurs</h3>
+                    <p class="card-text">Conditions climatiques, sol, pratiques culturales a risque.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#128270;</div>
+                    <h3 class="card-title">4. Symptomes</h3>
+                    <p class="card-text">Symptomes detailles sur feuilles, tiges, fruits et racines.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#128737;</div>
+                    <h3 class="card-title">5. Lutte</h3>
+                    <p class="card-text">Prevention, lutte biologique, chimique et mecanique.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#129514;</div>
+                    <h3 class="card-title">6. Produits</h3>
+                    <p class="card-text">Produits recommandes, mode d'action, application et precautions.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#128218;</div>
+                    <h3 class="card-title">7. Ressources</h3>
+                    <p class="card-text">Sources fiables, instituts agricoles, documents de reference.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title fade-in">Besoin de conseils de prevention ?</h2>
+            <p class="cta-description fade-in">
+                Consultez notre guide complet de bonnes pratiques agricoles pour la tomate.
+            </p>
+            <div class="cta-actions fade-in">
+                <a href="prevention.html" class="btn btn-large" style="background: white; color: var(--primary);">
+                    Guide de prevention &#8594;
+                </a>
+                <a href="ressources.html" class="btn btn-secondary-white btn-large">
+                    Ressources externes
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">&#127793; Classe Numerique Agricole</div>
+                    <p class="footer-description">
+                        Plateforme d'apprentissage en ligne dediee a l'agriculture de la tomate.
+                        Contenu pedagogique gratuit pour agriculteurs, techniciens et apprenants.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-column-title">Formation</h4>
+                    <div class="footer-links">
+                        <a href="modules.html">Tous les modules</a>
+                        <a href="maladie.html?id=mildiou">Mildiou</a>
+                        <a href="maladie.html?id=oidium">Oidium</a>
+                        <a href="maladie.html?id=tuta-absoluta">Tuta absoluta</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-column-title">Ressources</h4>
+                    <div class="footer-links">
+                        <a href="prevention.html">Guide de prevention</a>
+                        <a href="ressources.html">Ressources externes</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-column-title">A propos</h4>
+                    <div class="footer-links">
+                        <a href="index.html#pourquoi">Objectif</a>
+                        <a href="index.html#public">Public cible</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>Classe Numerique Agricole - Formation ouverte et gratuite</span>
+                <span>Contenu a vocation educative et informative</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data/mildiou.js"></script>
+    <script src="js/data/oidium.js"></script>
+    <script src="js/data/alternariose.js"></script>
+    <script src="js/data/botrytis.js"></script>
+    <script src="js/data/fusariose.js"></script>
+    <script src="js/data/verticilliose.js"></script>
+    <script src="js/data/bacteriose.js"></script>
+    <script src="js/data/mosaique.js"></script>
+    <script src="js/data/tuta-absoluta.js"></script>
+    <script src="js/data/carences.js"></script>
+    <script src="js/data/cladosporiose.js"></script>
+    <script src="js/data/fonte-des-semis.js"></script>
+    <script src="js/data/nematodes.js"></script>
+    <script src="js/data/mouche-blanche.js"></script>
+    <script src="js/data/noctuelles.js"></script>
+    <script src="js/data/acariens.js"></script>
+    <script src="js/data/defoliatrices.js"></script>
+    <script src="js/data/pucerons.js"></script>
+    <script src="js/data/thrips.js"></script>
+    <script src="js/data/anthracnose.js"></script>
+    <script src="js/data/sclerotiniose.js"></script>
+    <script src="js/data/pythium-phytophthora.js"></script>
+    <script src="js/data/stemphylium.js"></script>
+    <script src="js/data/chancre-bacterien.js"></script>
+    <script src="js/data/fletrissement-bacterien.js"></script>
+    <script src="js/data/tylcv.js"></script>
+    <script src="js/data/tswv.js"></script>
+    <script src="js/data/tobrfv.js"></script>
+    <script src="js/data/liriomyza.js"></script>
+    <script src="js/data/doryphore.js"></script>
+    <script src="js/data/necrose-apicale.js"></script>
+    <script src="js/data/maladies.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
