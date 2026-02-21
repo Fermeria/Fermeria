@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fiche complete de maladie de la tomate : diagnostic, symptomes, prevention et traitement.">
+    <title>Maladie de la tomate | Fermeria Agricole</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <div class="brand-icon">&#127793;</div>
+                Fermeria
+            </a>
+            <div class="navbar-menu" id="navMenu">
+                <a href="index.html">Accueil</a>
+                <a href="modules.html" class="active">Modules</a>
+                <a href="prevention.html">Prevention</a>
+                <a href="ressources.html">Ressources</a>
+            </div>
+            <div class="navbar-actions">
+                <a href="modules.html" class="btn btn-primary">Tous les modules</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO MALADIE (genere par JS) ============ -->
+    <section class="disease-hero" id="disease-hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="disease-breadcrumb" id="breadcrumb">
+                <a href="index.html">Accueil</a>
+                <span class="separator">/</span>
+                <a href="modules.html">Modules</a>
+                <span class="separator">/</span>
+                <span id="breadcrumb-current">Chargement...</span>
+            </div>
+            <div class="disease-detail-header" id="disease-header">
+                <!-- Genere par JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTENU MALADIE ============ -->
+    <section class="section" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="disease-content-layout">
+                <!-- Table des matieres (sidebar) -->
+                <aside>
+                    <div class="disease-toc" id="disease-toc">
+                        <h3 class="disease-toc-title">Sommaire</h3>
+                        <div class="disease-toc-list" id="toc-list">
+                            <!-- Genere par JS -->
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Contenu principal -->
+                <main id="disease-content">
+                    <!-- Genere par JS -->
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ NAVIGATION ENTRE MALADIES ============ -->
+    <section class="section section-alt" style="padding: 2rem 0;">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <a href="#" class="btn btn-secondary" id="prev-disease" style="visibility: hidden;">
+                    &#8592; Module precedent
+                </a>
+                <a href="modules.html" class="btn btn-secondary">
+                    Tous les modules
+                </a>
+                <a href="#" class="btn btn-primary" id="next-disease" style="visibility: hidden;">
+                    Module suivant &#8594;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">&#127793; Fermeria </div>
+                    <p class="footer-description">
+                        Plateforme d'apprentissage en ligne dediee a l'agriculture de la tomate.
+                        Contenu pedagogique gratuit pour agriculteurs, techniciens et apprenants.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-column-title">Formation</h4>
+                    <div class="footer-links">
+                        <a href="modules.html">Tous les modules</a>
+                        <a href="maladie.html?id=mildiou">Mildiou</a>
+                        <a href="maladie.html?id=oidium">Oidium</a>
+                        <a href="maladie.html?id=tuta-absoluta">Tuta absoluta</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-column-title">Ressources</h4>
+                    <div class="footer-links">
+                        <a href="prevention.html">Guide de prevention</a>
+                        <a href="ressources.html">Ressources externes</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-column-title">A propos</h4>
+                    <div class="footer-links">
+                        <a href="index.html#pourquoi">Objectif</a>
+                        <a href="index.html#public">Public cible</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>Classe Numerique Agricole - Formation ouverte et gratuite</span>
+                <span>Contenu a vocation educative et informative</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data/mildiou.js"></script>
+    <script src="js/data/oidium.js"></script>
+    <script src="js/data/alternariose.js"></script>
+    <script src="js/data/botrytis.js"></script>
+    <script src="js/data/fusariose.js"></script>
+    <script src="js/data/verticilliose.js"></script>
+    <script src="js/data/bacteriose.js"></script>
+    <script src="js/data/mosaique.js"></script>
+    <script src="js/data/tuta-absoluta.js"></script>
+    <script src="js/data/carences.js"></script>
+    <script src="js/data/cladosporiose.js"></script>
+    <script src="js/data/fonte-des-semis.js"></script>
+    <script src="js/data/nematodes.js"></script>
+    <script src="js/data/mouche-blanche.js"></script>
+    <script src="js/data/noctuelles.js"></script>
+    <script src="js/data/acariens.js"></script>
+    <script src="js/data/defoliatrices.js"></script>
+    <script src="js/data/pucerons.js"></script>
+    <script src="js/data/thrips.js"></script>
+    <script src="js/data/anthracnose.js"></script>
+    <script src="js/data/sclerotiniose.js"></script>
+    <script src="js/data/pythium-phytophthora.js"></script>
+    <script src="js/data/stemphylium.js"></script>
+    <script src="js/data/chancre-bacterien.js"></script>
+    <script src="js/data/fletrissement-bacterien.js"></script>
+    <script src="js/data/tylcv.js"></script>
+    <script src="js/data/tswv.js"></script>
+    <script src="js/data/tobrfv.js"></script>
+    <script src="js/data/liriomyza.js"></script>
+    <script src="js/data/doryphore.js"></script>
+    <script src="js/data/necrose-apicale.js"></script>
+    <script src="js/data/maladies.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
